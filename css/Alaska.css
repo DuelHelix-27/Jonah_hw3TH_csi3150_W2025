@@ -1,0 +1,463 @@
+/* Import google api Font family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* Main CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace, sans-serif;
+  /* Set variables for colors */
+  --font-color-primary: #f4f4f9;
+  --font-color-secondary: #ecba36;
+  --font-color-paragraph: #dbd9d4;
+  --hover-color: #de6b48;
+}
+/* Tour and Travel Page */
+.Tour-and-travel {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/img/pexels-frans-van-heerden-201846-688890.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tour-and-travel p {
+  font-size: 14px;
+  color: var(--font-color-primary);
+}
+
+.Tour-and-travel h2 {
+  font-size: 35px;
+  color: var(--font-color-primary);
+  font-weight: 700;
+  width: 150px;
+  text-align: center;
+  line-height: 0.8;
+}
+
+.Tour-and-travel img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+}
+
+.Tour-and-travel h1 {
+  font-size: 144px;
+  margin-top: 30px;
+  color: var(--font-color-secondary);
+}
+
+.Tour-and-travel h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--font-color-primary);
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Tour-and-travel i {
+  font-size: 144px;
+  color: var(--font-color-secondary);
+  cursor: pointer;
+}
+
+/* Hero Section */
+.Hero {
+  background-image: url(../assets/img/pexels-eberhardgross-2098428.jpg);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Hero h1 {
+  font-size: 64px;
+  color: var(--font-color-secondary);
+  padding: 30px;
+  width: 600px;
+  margin-bottom: 100px;
+}
+.Hero .H-p {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-bottom: 100px;
+}
+.Hero p {
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--font-color-paragraph);
+  text-align: left;
+  text-wrap: wrap;
+}
+
+.rm-btn {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--font-color-secondary);
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: background 0.3s ease;
+}
+
+.rm-btn:hover {
+  background: var(--hover-color);
+  border: 1px solid var(--font-color-paragraph);
+}
+
+/* Option Section */
+.Pic-option {
+  height: 90vh;
+  background-image: url(../assets/img/pexels-eberhardgross-1417647.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+  color: var(--font-color-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.Pic-top {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.Pic-top .item {
+  width: 20%;
+  height: 80%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.Pic-top h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: var(--font-color-secondary);
+  align-items: stretch;
+}
+
+.Pic-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Overlay-content {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Overlay-content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--font-color-primary);
+}
+
+.Overlay-content i {
+  font-size: 32px;
+  color: var(--font-color-secondary);
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+/* Info Section*/
+.Info {
+  height: 80vh;
+  background-image: url(../assets/img/pexels-sagui-andrea-200115-618848.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 60px;
+  color: var(--font-color-primary);
+  position: relative;
+}
+
+.Info h1 {
+  float: left;
+  width: 30%;
+  font-size: 64px;
+  color: var(--font-color-secondary);
+  line-height: 1.1;
+  margin-right: 5%;
+}
+
+.Info-p {
+  float: right;
+  margin-right: 200px;
+  width: 35%;
+}
+
+.Info-p h2 {
+  font-size: 24px;
+  color: var(--font-color-primary);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.Info-p p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Stats section */
+.Stats {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  color: var(--font-color-primary);
+  background-image: url(../assets/img/pexels-sagui-andrea-200115-618848.jpg);
+}
+
+.Stats .item {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  color: var(--font-color-secondary);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Stats .item h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Stats .item p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--font-color-primary);
+}
+
+/* Connor Quinn Section*/
+.CQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 40px 20px;
+  background-image: url(../assets/img/pexels-samuelsweet-5973046.jpg);
+}
+
+.CQ p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  color: var(--font-color-paragraph);
+}
+
+.CQ h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--font-color-primary);
+}
+
+.CQ i {
+  font-size: 100px;
+  color: var(--font-color-secondary);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.CQ img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/*  Slideshow Section  */
+.Pic-slideshow {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-track img {
+  width: 25%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.Pic-slideshow i.bx {
+  position: absolute;
+  top: 45%;
+  font-size: 64px;
+  color: var(--font-color-secondary);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Pic-slideshow .bx-chevron-left {
+  left: 10px;
+}
+.Pic-slideshow .bx-chevron-right {
+  right: 10px;
+}
+
+/*  Contact Section  */
+.Contact {
+  height: 50vh;
+  background-image: url(../assets/img/pexels-eberhardgross-1417647.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+}
+
+.Contact-info {
+  margin-left: 100px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.Contact-info h1 {
+  font-size: 64px;
+  color: var(--font-color-secondary);
+}
+
+.Contact-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--font-color-primary);
+}
+
+.Contact-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.Contact-icons i {
+  font-size: 28px;
+  color: var(--font-color-secondary);
+  cursor: pointer;
+}
+
+.Contact-form {
+  margin-top: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Contact-form label {
+  font-size: 16px;
+  color: var(--font-color-secondary);
+  margin-bottom: 8px;
+}
+
+/*  Contact textbox*/
+.Contact-form input,
+.Contact-form textarea {
+  width: 60%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  margin-left: 200px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.Contact-form textarea {
+  height: 120px;
+}
+
+.Contact input::placeholder {
+  color: var(--font-color-secondary);
+}
+
+.Contact .Submit-btn {
+  width: 120px;
+  height: 40px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--font-color-secondary);
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: background 0.3s ease;
+}
+
+.Contact .Submit-btn:hover {
+  background-color: var(--hover-color);
+}
